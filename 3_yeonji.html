@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModel</title>
+    <style>
+        div {
+            border: 1px dashed darkblue;
+            /* border-color: darkblue;
+            border-style: dashed;
+            border: 1px; */
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #header {
+            background-color: black;
+            color: aliceblue;
+            /* margin: 10px; */
+            /* margin: 10px 30px; */
+            /* 시계방향 */
+            /* margin: 10px 20px 30px 40px;  */
+            /* margin-left: 10px;
+            margin-right: 20px;
+            margin-top : 30px;
+            margin-bottom: 40px; */
+        
+            padding: 10px;
+            /* padding: 10px 30px; */
+            /* 시계방향 */
+            /* padding: 10px 20px 30px 40px;  */
+            /* padding-left: 10px;
+            padding-right: 20px;
+            padding-top : 30px;
+            padding-bottom: 40px; */
+        
+        }
+        
+        #container {
+            background-color: green;
+            color: aliceblue;
+        }
+        
+        #footer {
+            background-color: purple;
+            color: aliceblue;
+        }
+
+        img {
+            width: 300px;
+            /* background-color: beige; */
+        }
+
+        h1  {
+            text-align:center;
+            
+        }
+
+        #navi {
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+    </style>
+<body>
+    <!-- 
+        1. 홈페이지를 만든다고 생각하고 
+맨 위에 고정된 부분 - id : header 
+내용이 계속 바뀌는 부분 - main / id : container
+맨 아래에 기본정보를 담고 있는 부분 - id : footer 
+div로 만들어주세요 각각 어느정도 영역을 자리하고 있는지 border를 통해서 그려주세요. 
+
+2. 각 div에 서로 다른 색깔의 background-color 를 지정해 주세요.
+-->
+    <div id="header">
+        <h1>내가 좋아하는 것 💕</h1>
+        <div id="navi">
+            <a href="#img1">짱구는 못말려</a>
+            <a href="#img2">릭 앤 모티</a>
+            <a href="#img3">네모네모 스폰지밥</a>
+        </div>
+    </div>
+
+    <div id="container">
+        <!-- <img src="C:\ITStudy\02_CSS\data\jjanggu.png" alt="jjangu"> -->
+        <img src=".\data\jjanggu.png" id="img1" alt="jjangu">
+        <img src=".\data\rick.jpg" id="img2" alt="rick">
+        <img src="data\spongebob.jpg" id="img3" alt="spongebob">
+    </div>
+
+    <div id="footer">
+김연지<br>
+atangi@naver.com<br>
+    </div>
+
+</body>
+</html>
